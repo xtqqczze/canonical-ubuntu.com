@@ -29,15 +29,17 @@
       </p>
     {%- endif -%}
     {%- if slot == 'image' -%}
-      <div class="p-image-container--16-9 is-highlighted">
-        {{ image(url="https://assets.ubuntu.com/v1/6562ba06-azure-bubble-slash-pro-hero-image.png",
-                alt="",
-                width="307",
-                height="128",
-                hi_def=True,
-                loading="auto",
-                attrs={"class": "p-image-container__image"}) | safe
-        }}
+      <div class="u-embedded-media">
+        <iframe
+          class="u-embedded-media__element"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ZyM7s6iFMrE"
+          title="Ubuntu Pro for Azure video"
+          frameborder="0"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
     {%- endif -%}
   {% endcall -%}
@@ -65,17 +67,17 @@
     <div class="row--50-50 p-section--shallow">
       <hr class="p-rule" />
       <div class="col">
-        <h2>Launch Ubuntu&nbsp;Pro 24.04&nbsp;LTS</h2>
+        <h2>Launch Ubuntu&nbsp;Pro 26.04&nbsp;LTS</h2>
       </div>
       <div class="col">
         <div class="p-section--shallow">
           <p>
-            Ubuntu Pro 24.04 delivers additional layers of security and compliance services with security patches covering a wider range of packages, until 2034.
+            Ubuntu Pro 26.04 delivers additional layers of security and compliance services with security patches covering a wider range of packages, until 2036.
           </p>
         </div>
         <hr class="p-rule--muted" />
         <a class="p-button--positive"
-           href="https://portal.azure.com/#create/canonical.ubuntu-24_04-ltsubuntu-pro">Launch Ubuntu Pro 24.04 LTS</a>
+           href="https://marketplace.microsoft.com/en-us/product/canonical.ubuntu-pro-26_04-lts">Launch Ubuntu Pro 26.04 LTS</a>
         <hr class="p-rule--muted" />
         <p>
           <a href="/azure/contact-us"
@@ -93,6 +95,18 @@
           </div>
           <div class="col-6 col-medium-3">
             <ul class="p-list--divided">
+              <li class="p-list__item">
+                <div class="row">
+                  <div class="col-3">
+                    <p class="u-no-margin--bottom">
+                      <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/canonical.0001-com-ubuntu-pro-jammy?tab=Overview">24.04 LTS&nbsp;&rsaquo;</a>
+                    </p>
+                  </div>
+                  <div class="col-3">
+                    <p class="u-no-margin--bottom">Maintained until 2032</p>
+                  </div>
+                </div>
+              </li>
               <li class="p-list__item">
                 <div class="row">
                   <div class="col-3">
@@ -126,18 +140,6 @@
                   </div>
                   <div class="col-3">
                     <p class="u-no-margin--bottom">Maintained until 2028</p>
-                  </div>
-                </div>
-              </li>
-              <li class="p-list__item">
-                <div class="row">
-                  <div class="col-3">
-                    <p class="u-no-margin--bottom">
-                      <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/canonical.0001-com-ubuntu-pro-xenial?tab=Overview">16.04 LTS&nbsp;&rsaquo;</a>
-                    </p>
-                  </div>
-                  <div class="col-3">
-                    <p class="u-no-margin--bottom">Maintained until 2026</p>
                   </div>
                 </div>
               </li>
